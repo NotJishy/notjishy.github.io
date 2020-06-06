@@ -29,6 +29,9 @@ nav{
 .nav-links .breaker{
     margin: 5px;
 }
+nav div.logo{
+    text-decoration: underline;
+}
 .burger{
     display: none;
 }
@@ -43,6 +46,17 @@ nav{
 @media screen and (min-width:768px){
     .nav-links{
         justify-content: space-around;
+    }
+    .nav-link:hover{
+        background-color: darkgray;
+        border-color: black;
+        transition: 0.3s ease-in;
+    }
+    .nav-link{
+        padding: 2vh;
+        transition: 0.3s ease-in;
+        border-style: solid;
+        border-color: #D6D6D6;
     }
 }
 
