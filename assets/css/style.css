@@ -4,7 +4,155 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #D6D6D6;
+    background-color: #FFFFFF;
+}
+.overlay-github{
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s ease;
+    font-family: 'Roboto Mono', monospace;
+}
+.overlay-content-github{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay-github a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: darkgray;
+    display: block;
+    transition: 0.3s ease-in;
+}
+.overlay-github a:hover{
+    color: white;
+}
+.overlay-close-button-github{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+.overlay-twitter{
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s ease;
+    font-family: 'Roboto Mono', monospace;
+}
+.overlay-content-twitter{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay-twitter a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: darkgray;
+    display: block;
+    transition: 0.3s ease-in;
+}
+.overlay-twitter a:hover{
+    color: white;
+}
+.overlay-close-button-twitter{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+.overlay-discord{
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s ease;
+    font-family: 'Roboto Mono', monospace;
+}
+.overlay-content-discord{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay-discord a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: darkgray;
+    display: block;
+    transition: 0.3s ease-in;
+}
+.overlay-discord a:hover{
+    color: white;
+}
+.overlay-close-button-discord{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+.overlay-youtube{
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s ease;
+    font-family: 'Roboto Mono', monospace;
+}
+.overlay-content-youtube{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay-youtube a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: darkgray;
+    display: block;
+    transition: 0.3s ease-in;
+}
+.overlay-discord a:hover{
+    color: white;
+}
+.overlay-close-button-youtube{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
 nav{
     display: flex;
@@ -12,6 +160,10 @@ nav{
     align-items: center;
     min-height: 8vh;
     font-family: 'Roboto Mono', monospace;
+    background-color: #D6D6D6;
+}
+.nav-border{
+    color: black;
 }
 .nav-links{
     display: flex;
@@ -42,6 +194,7 @@ nav div.logo{
     margin: 5px;
     transition: all 0.3s ease;
 }
+
 
 @media screen and (min-width:768px){
     .nav-links{

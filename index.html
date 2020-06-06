@@ -13,16 +13,57 @@
     </head>
     
     <body>
+        <!--Github Menu-->
+        <div id="overlay-github" class="overlay-github">
+            <a href="javascript:void(0)" class="overlay-close-button-github" onclick="closeOverlay('github')">&times;</a>
+            <div class="overlay-content-github" id="overlay-content-github">
+                <a href="https://github.com/NotJishy" target="_blank" onclick="closeOverlay('github')">My Profile</a>
+                <a href="https://github.com/NotJishy/LoungeBot" target="_blank" onclick="closeOverlay('github')">LoungeBot</a>
+                <a href="https://github.com/NotJishy/notjishy.github.io" target="_blank" onclick="closeOverlay('github')">Website</a>
+            </div>
+        </div>
+
+        <!--Twitter Menu-->
+        <div id="overlay-twitter" class="overlay-twitter">
+            <a href="javascript:void(0)" class="overlay-close-button-twitter" onclick="closeOverlay('twitter')">&times;</a>
+            <div class="overlay-content-twitter" id="overlay-content-twitter">
+                <a href="https://twitter.com/iamnotjishy" target="_blank" onclick="closeOverlay('twitter')">Main Twitter</a>
+                <a href="https://twitter.com/jishyspamuwu" target="_blank" onclick="closeOverlay('twitter')">2nd Twitter</a>
+                <a href="https://twitter.com/minecraftparks" target="_blank" onclick="closeOverlay('twitter')">MCParks Twitter</a>
+            </div>
+        </div>
+
+        <!--Discord Menu-->
+        <div id="overlay-discord" class="overlay-discord">
+            <a href="javascript:void(0)" class="overlay-close-button-discord" onclick="closeOverlay('discord')">&times;</a>
+            <div class="overlay-content-discord" id="overlay-content-discord">
+                <a href="https://discord.gg/tG6BAvE" target="_blank" onclick="closeOverlay('discord')">My Discord</a>
+                <a href="https://discord.gg/9sgHKeb" target="_blank" onclick="closeOverlay('discord')">The Lounge</a>
+                <a href="https://discord.gg/qVXnrfd" target="_blank" onclick="closeOverlay('discord')">MCParks</a>
+            </div>
+        </div>
+
+        <!--YouTube Menu-->
+        <div id="overlay-youtube" class="overlay-youtube">
+            <a href="javascript:void(0)" class="overlay-close-button-youtube" onclick="closeOverlay('youtube')">&times;</a>
+            <div class="overlay-content-twitter" id="overlay-content-twitter">
+                <a href="https://youtube.com/jishydoods" target="_blank" onclick="closeOverlay('youtube')">My Channel</a>
+                <a href="https://youtube.com/mcparksminecraft" target="_blank" onclick="closeOverlay('youtube')">MCParks Channel</a>
+            </div>
+        </div>
+
         <div class="nav">
             <nav>
                 <ul class="nav-links">
-                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="https://notjishy.github.io">Home</a></li>
                     <li><a class="nav-breaker">◦</a></li>
-                    <li><a class="nav-link" href="#">Projects</a></li>
+                    <li><a class="nav-link" onclick="openOverlay('github')">Github</a></li>
                     <li><a class="nav-breaker">◦</a></li>
-                    <li><a class="nav-link" href="#">Twitter</a></li>
+                    <li><a class="nav-link" onclick="openOverlay('twitter')">Twitter</a></li>
                     <li><a class="nav-breaker">◦</a></li>
-                    <li><a class="nav-link" href="#">Discord</a></li>
+                    <li><a class="nav-link" onclick="openOverlay('discord')">Discord</a></li>
+                    <li><a class="nav-breaker">◦</a></li>
+                    <li><a class="nav-link" onclick="openOverlay('youtube')">YouTube</a></li>
                 </ul>
     
                 <div class="logo">
@@ -40,5 +81,16 @@
         </div>
 
         <script src="nav.js"></script>
+        <script>
+            function openOverlay(menu){
+                document.getElementById(`overlay-${menu}`).style.height = "100%"
+                document.getElementById(`overlay-content-${menu}`).style.display = "block"
+            }
+
+            function closeOverlay(menu) {
+                document.getElementById(`overlay-${menu}`).style.height = "0%"
+                document.getElementById(`overlay-content-${menu}`).style.display = "none"
+            }
+        </script>
     </body>
 </html>
